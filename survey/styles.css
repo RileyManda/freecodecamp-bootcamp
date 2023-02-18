@@ -7,56 +7,96 @@
   box-sizing: border-box;
 }
 
-  @media only screen and (min-width:480px)
-  {
+@media only screen and (min-width: 480px) {
+}
 
-  }
+@media only screen and (min-width: 767px) {
+}
 
-  @media only screen and (min-width:767px)
-  {
+@media only screen and (min-width: 991px) {
+}
 
-  }
-
-  @media only screen and (min-width:991px)
-  {
-
-  }
-
-  @media only screen and (min-width:1200px)
-  {
- .font {
+@media only screen and (min-width: 1200px) {
+  .font {
     padding: 0px 200px 15px 200px;
-        }
   }
+}
 
-  @media(orientation: landscape)
-  {
-
-  }
+@media (orientation: landscape) {
+}
 body {
   width: 100%;
   height: auto;
   max-width: 500px;
   min-width: 300px;
-
-} .center , .form-title , .img-div {
-    margin: auto;
-    padding: auto;
-    text-align: center;
-  }
+}
+.center,
+.form-title,
+.img-div {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
 
 #title {
-    font-size: 200%;
-    width: 60vmax;
-  }
+  font-size: 200%;
+  width: 60vmax;
+}
 img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    min-width: 30%;
-  }
-  h1{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 30%;
+}
+h1 {
   text-shadow: 2px 2px 2px #d2d3d5;
-  margin: 0 auto
-  }
+  margin: 0 auto;
+}
+.form-style{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style .label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="submit"],
+.form-style input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: hsl(0, 1%, 83%);
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #045c4a;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.button{
+    background-color: #045c4a;
+    margin: 0 auto;
+    color: #d2d3d5;
+    padding: 10px;
 
+}
+
+  @media only screen and (max-width:480px){
+
+  #main {
+    padding: 0% 0% 0% 0%;
+    }
+  }

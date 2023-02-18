@@ -1,0 +1,24 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  min-width: 300px;
+}
+#title {
+    font-size: 200%;
+    width: 60vmax;
+  }
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 30%;
+  }

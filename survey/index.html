@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Cat Survey</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Cat Survey Form</h1>
+        <div id="img-div">
+            <img src="./assets/imgs/cat_bg.jpg"  />
+        </div>
+        <p id="description">A survey form about cat's habits</p>
+
+        <form id="survey-form">
+            <div id="main-form">
+                <label id="name-label">Name <input id="name" type="text" placeholder="Name" required /></label>
+                <label id="email-label">Email <input id="email" type="email" placeholder="Email" required /></label>
+                <label id="number-label">Age
+                    <input id="number" type="number" min="6" max="100" placeholder="Age" required /></label>
+            </div>
+            <!--start| dropdown elements |id="dropdown"-->
+            <div id="cat-options">
+                <label>Cat Breed:</label>
+                <select id="dropdown">
+                    <option>Brown</option>
+                    <option>Black</option>
+                    <option>Orange</option>
+                </select>
+            </div>
+            <!--start| radio buttons grouped by name attribute -->
+            <div id="cat-time">
+                <label name="morning">Morning:</label> <input type="radio" id="morning" value="morning" name="habits" />
+                <label name="evening">Evening:</label> <input type="radio" id="evening" value="evening" name="habits" />
+            </div>
+
+            <!--start| series of checkboxes with multiple selection options -->
+            <div id="cat-habits">
+                <label name="behaved">WellBehaved: </label> <input type="checkbox" id="behaved" value="behaved"
+                    checked />
+                <label name="naughty">Naughty: </label> <input type="checkbox" id="naughty" value="naughty" />
+
+            </div>
+
+            <div id="comment-field"><textarea cols="20" name="comments" rows="5">Comments</textarea></div>
+            <div class="button"><input id="submit" type="button" value="Submit"></div>
+
+
+        </form>
+    </main>
+</body>
+
+</html>

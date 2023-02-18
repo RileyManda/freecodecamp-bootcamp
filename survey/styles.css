@@ -6,12 +6,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+  @media only screen and (min-width:480px)
+  {
+
+  }
+
+  @media only screen and (min-width:767px)
+  {
+
+  }
+
+  @media only screen and (min-width:991px)
+  {
+
+  }
+
+  @media only screen and (min-width:1200px)
+  {
+ .font {
+    padding: 0px 200px 15px 200px;
+        }
+  }
+
+  @media(orientation: landscape)
+  {
+
+  }
 body {
   width: 100%;
   height: auto;
   max-width: 500px;
   min-width: 300px;
-}
+
+} .center , .form-title , .img-div {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+
 #title {
     font-size: 200%;
     width: 60vmax;
@@ -22,3 +55,8 @@ img {
     max-width: 100%;
     min-width: 30%;
   }
+  h1{
+  text-shadow: 2px 2px 2px #d2d3d5;
+  margin: 0 auto
+  }
+

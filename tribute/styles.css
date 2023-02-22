@@ -22,3 +22,8 @@ img{
     padding: auto;
     text-align: center;
   }
+
+.vl {
+  border-left: 6px solid rgb(203, 90, 90);
+  height: 500px;
+}

@@ -11,53 +11,105 @@
 <body>
     <nav id="navbar">
         <header id="main-header">
-        <ul>
-
-<li><a class="nav-link" href="#variables">Variables</a></li>
-<li><a class="nav-link" href="#classes">Classes</a></li>
-<li><a class="nav-link" href="#types">Types</a></li>
-<li><a class="nav-link" href="#algorithms">Algorithms</a></li>
-<li><a class="nav-link" href="#styling">Styling</a></li>
-        </ul>
+            <ul>
+                <li><a class="nav-link active" href="#variables">Variables</a></li>
+                <li><a class="nav-link" href="#functions">Functions</a></li>
+                <li><a class="nav-link" href="#types">Types</a></li>
+                <li><a class="nav-link" href="#classes">Classes</a></li>
+                <li><a class="nav-link" href="#styling">Styling</a></li>
+            </ul>
         </header>
-       
+
     </nav>
     <main id="main-doc">
         <section id="variables" class="main-section">
             <header><b>Variables</b></header>
-            
-            <p></p>
-            <p></p>
-            <code></code>
+            <p>Variables are containers for storing data (storing data values).
+                In this example, x, y, and z, are variables, declared with the var keyword:</p>
+            <p><b><i>Example</i></b></p>
+            <code>var x = 5;
+            var y = 6;
+            var z = x + y;
+        </code>
         </section>
-        <section id="classes" class="main-section">
-            <header><b>Classes</b></header>
-           
-            <p></p>
-            <p></p>
-            <code></code>
+        <section id="functions" class="main-section">
+            <header><b>Functions</b></header>
+
+            <p>A JavaScript function is a block of code designed to perform a particular task.
+
+            </p>
+            <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+            <p><b><i>Example</i></b></p>
+            <code>// Function to compute the product of p1 and p2
+                        function myFunction(p1, p2) {
+                        return p1 * p2;
+                        }</code>
         </section>
         <section id="types" class="main-section">
             <header><b>Types</b></header>
-          
-            <p></p>
-            <p></p>
-            <code></code>
-        </section>
-        <section id="algorithms" class="main-section">
-            <header><b>Algorithms</b></header>
+
+            <p>JavaScript has 8 Datatypes
+                1. String
+                2. Number
+                3. Bigint
+                4. Boolean
+                5. Undefined
+                6. Null
+                7. Symbol
+                8. Object</p>
+            <p>The Object Datatype
+                The object data type can contain:
+                1. An object
+                2. An array
+                3. A date</p>
+            <p><b><i>Example</i></b></p>
+            <code>// Numbers:
+            let length = 16;
+            let weight = 7.5;
             
-            <p></p>
-            <p></p>
-            <code></code>
+            // Strings:
+            let color = "Yellow";
+            let lastName = "Johnson";
+            
+            // Booleans
+            let x = true;
+            let y = false;
+            
+            // Object:
+            const person = {firstName:"John", lastName:"Doe"};
+            
+            // Array object:
+            const cars = ["Saab", "Volvo", "BMW"];
+            
+            // Date object:
+            const date = new Date("2022-03-25");</code>
         </section>
-        <section id="styling" class="main-section">
-            <header><b>Styling</b></header>
-           
-            <p></p>
-            <p></p>
-            <code></code>
+
+        <section id="classes" class="main-section">
+            <header><b>Classes</b></header>
+            <p>JavaScript Classes are templates for JavaScript Objects.</p>
+            <p>Use the keyword class to create a class.
+
+                Always add a method named constructor():</p>
+            <p><b><i>Example</i></b></p>
+            <code>class ClassName {
+            constructor() { ... }
+            }</code>
         </section>
+
+        <section id="modules" class="main-section">
+            <header><b>Modules</b></header>
+            <p>JavaScript modules allow you to break up your code into separate files.
+                This makes it easier to maintain a code-base.</p>
+            <p>Modules are imported from external files with the <code>import</code> statement.</p>
+            <p><b><i>Example</i></b></p>
+            <code>
+                    <script type="module">
+                        import message from "./message.js";
+                    </script>
+                </code>
+        </section>
+
 
 
     </main>

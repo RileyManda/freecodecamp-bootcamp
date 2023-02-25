@@ -30,4 +30,23 @@ body {
   max-width: 500px;
   min-width: 300px;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #042c88;
+  color: #fff;
+}
+/* header{
+background-color: #840101;
+} */

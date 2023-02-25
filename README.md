@@ -1,4 +1,4 @@
-# [Freecodecamp](https://www.freecodecamp.org)<br>Responsive Webdesign Projects
+# [Freecodecamp BootCamp](https://www.freecodecamp.org)<br>Responsive Webdesign Projects
 
 ## Quiz projects:
 

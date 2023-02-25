@@ -1,0 +1,59 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+@media only screen and (min-width: 991px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .font {
+    padding: 0px 200px 15px 200px;
+  }
+}
+
+@media (orientation: landscape) {
+}
+body {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  min-width: 300px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #122e4d;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #be4d4d;
+}
+/* header{
+background-color: #840101;
+} */

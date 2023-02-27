@@ -61,8 +61,38 @@ li a:hover {
 .active {
   background-color: #eeaf1d;
 }
-nav
-{
+
+
+
+
+#header-img { 
+  float: left;
+  display: inline-block;
+}
+
+.clear {
+  clear: both;
+}
+
+
+#nav {
+    background-color: orange;  /*turns nav bar white*/
+    color: white;
+    width: 100%;
+     float: right;
+  list-style: none;    /*gets rid of bullet points*/ 
+    text-align: left;
+    /*padding: 0px -10px 0px -10px; */
+  margin: 0;
    position: fixed;
    top: 0px;
+
 }
+.nav > li {                                                             /*max-width: 768px*/
+    display:Inline-block;
+    padding: 10px 9px 10px 9px;                               /*nav bar text*/
+}
+
+ .nav > li > a:hover {
+     color: black;
+ }

@@ -58,9 +58,14 @@ body {
   font-size: 18px;
 }
 
-title {
-  float: left;
+.title {
+  margin: auto;
+  width: 50%;
+  border: 3px dashed rgb(108, 108, 108);
+  padding: 10px;
+  text-align: center;
 }
+
 
 ul {
   list-style-type: none;

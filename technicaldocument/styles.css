@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 /* css reset */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -32,18 +30,43 @@
   }
 }
 body {
-  width: 100%;
-  height: auto;
-  max-width: 500px;
-  min-width: 300px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  background-color: #122e4d;
+}
+
+.nav > .main-header {
+  display: inline;
+}
+
+.nav > .main-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+title {
+  float: left;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #122e4d;
 }
 
 li {
@@ -58,7 +81,6 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #0462aa;
 }
@@ -66,38 +88,72 @@ li a:hover {
   background-color: #be4d4d;
 }
 
+.column {
+  float: left;
+  width: 25%;
+  padding: 10 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 .card {
+  padding: 80px;
+  text-align: center;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 40%;
+  width: auto;
+  height: auto;
+  align-items: space-between;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container {
-  padding: 2px 16px;
-}
-
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
 .column {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  float: left;
+  width: 25%;
+  padding: 0 10px;
 }
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 /*  footer style*/
-/* Style the footer */
 .footer {
-  background-color: #f1f1f1;
+  background-color: #122e4d;
   padding: 10px;
   text-align: center;
+  color: #fff;
 }

@@ -1,0 +1,79 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+@media only screen and (min-width: 991px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .font {
+    padding: 0px 200px 15px 200px;
+  }
+}
+
+@media (orientation: landscape) {
+}
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+:root {
+  --primary-color: #060606;
+  --secondary-color: #1c5694;
+}
+body {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  min-width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#navbar ul a {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#navbar ul a:hover {
+  background-color: rgb(213, 90, 90);
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}

@@ -10,46 +10,49 @@
 </head>
 
 <body>
-    <main>
-        <header id="header">
-            <img id="header-img"
-                src="https://imgs.search.brave.com/Lw7zZNv41gkLUzmbmwRfWnB0IPA5cYRq6wYrVrnHkwk/rs:fit:999:1080:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzk5Lzlk/LzliLzk5OWQ5YmQ5/Mjg2MDY3ZWFmMTI1/YWZjMzQ4ZDk3ZGQx/LmpwZw"
-                width="60px" />
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link active" href="#baked">Baked</a></li>
-                    <li><a class="nav-link" href="#stuffed">Stuffed</a></li>
-                    <li><a class="nav-link" href="#fried">Fried</a></li>
-                </ul>
 
-            </nav>
+    <header id="header">
+        <nav id="nav-bar" class="nav-bar">
+            <img id="header-img" class="header-logo"
+                src="https://logosmarcas.net/wp-content/uploads/2020/12/Dota-2-Logo.png" width="60px" />
+            <ul class="ul">
+                <a class="nav-link active" href="#about">About</a>
+                <a class="nav-link" href="#download">Download</a>
+                <a class="nav-link" href="#play">Play</a>
+            </ul>
+        </nav>
+    </header>
 
-        </header>
-
-        <hr />
+    <main class="main-container">
         <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
             <input id="email" type="email" placeholder="Email" name="email" required></input>
             <input id="submit" type="submit" value="submit"></input>
 
         </form>
 
-        <video width="320" height="240" id="video" controls>
-            <source src="https://youtu.be/e-z8ktCKm_M" type="video/mp4">
-            <source src="https://youtu.be/e-z8ktCKm_M" type="video/ogg">
-            Your browser does not support the video tag.
-        </video>
-        <section id="baked">
+
+
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Xx0YUuvW4wA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <section id="about">
+            <h1>About</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel veniam debitis, recusandae optio saepe eos
                 eveniet ea voluptatem. Explicabo aut veniam quod quis, numquam dolorem aliquid autem commodi deserunt
                 nisi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugiat iure. Voluptatibus, beatae laborum animi aperiam, cum illo quod vero tenetur quam accusamus molestiae omnis expedita a ullam qui sapiente.</p>
         </section>
 
-        <section id="stuffed">
+        <section id="download">
+            <h1>Download</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit numquam minima, ut praesentium
                 voluptates aliquam repudiandae asperiores impedit, fugiat adipisci voluptatibus totam. Nulla tenetur
                 distinctio ab dignissimos optio rerum.</p>
         </section>
-        <section id="fried">
+        <section id="play">
+            <h1>Play</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sapiente eum vitae, quis fugiat quo
                 necessitatibus eaque vero, repellendus recusandae quaerat maiores soluta quia fuga ea, numquam delectus
                 natus ratione?</p>

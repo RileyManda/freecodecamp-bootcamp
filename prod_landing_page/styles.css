@@ -6,6 +6,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #112741;
+  --secondary-color: #db8888;
+  --active-color: #9d4e4e;
+  --line-color: #7a7979;
+  --border-color: #ccc;
+  --white-color: #fff;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -60,7 +68,7 @@ h1 {
   text-align: center;
 }
 hr {
-  background-color: gray;
+  background-color: var(--line-color);
 }
 
 form {
@@ -72,22 +80,22 @@ input {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 .btn {
-  background-color: #122e4d;
-  color: #fcf5f5;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   font-weight: normal;
   cursor: pointer;
 }
 
-.nav-bar {
+.navbar {
   position: fixed;
   transition: background 0.4s ease-in-out;
   width: 100%;
   overflow: hidden;
-  background-color: #122e4d;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,8 +104,12 @@ input {
   left: 0;
   z-index: 1030;
 }
-.nav-bar ul li {
+.navbar ul li {
   padding: 2rem 2rem;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
 }
 /* Style the navigation menu */
 
@@ -106,13 +118,13 @@ input {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #122e4d;
+  background-color: var(--primary-color);
   display: flex;
 }
 
 .nav-link {
   display: block;
-  color: white;
+  color: var(--white-color);
   text-align: center;
   float: left;
   padding: 14px 16px;
@@ -121,10 +133,10 @@ input {
 
 /* Change the link color to #9d4e4e  on hover */
 .nav-link:hover {
-  background-color: #9d4e4e;
+  background-color: var(--active-color);
 }
 .active {
-  background-color: #963737;
+  background-color: var(--active-color);
 }
 
 .container {
@@ -133,7 +145,7 @@ input {
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.header-video {
+.welcome-section {
   position: absolute;
   top: 0;
   left: 0;

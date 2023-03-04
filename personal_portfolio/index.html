@@ -1,59 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Personal Portfolio Webpage</title>
+    <title>Personal Portfolio</title>
 </head>
+
 <body>
     <header id="main-header">
-    <nav id="navbar" class="nav-bar">
-            <ul>
-                <li><a class="nav-link active" href="#about">About</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#techstack">Tech Stack</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
+        <nav id="navbar">
+            <img id="header-img"
+                src="https://imgs.search.brave.com/9R8ga0TlsLcolip9VtJA8pckCdHz77v83cRC1ozQStc/rs:fit:512:512:1/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L2phdmFzY3JpcHQt/cG5nL2phdmFzY3Jp/cHQtaWNvbi1qcy1j/b2RlLWxvZ28tamF2/YXNjcmlwdC1wbmct/bG9nby1kb3dubG9h/ZC05LnBuZw"
+                width="60px" />
+            <ul class="ul">
+                <a class="nav-link active" href="#welcome-section">Welcome</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#techstack">Stack</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </ul>
-    </nav>
-    <div id="welcome-section" class="container">
-        <h1 id="title">I am Riley</h1>
-        <p class="lead"><em>A full-stack developer</em></p>
-    </div>
+        </nav>
+        <div id="welcome-section">
+            <div id="welcome-content">
+                <h2 id="title">Riley's Portfolio</h2>
+                <img id="bg-image"
+                    src="https://imgs.search.brave.com/9R8ga0TlsLcolip9VtJA8pckCdHz77v83cRC1ozQStc/rs:fit:512:512:1/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L2phdmFzY3JpcHQt/cG5nL2phdmFzY3Jp/cHQtaWNvbi1qcy1j/b2RlLWxvZ28tamF2/YXNjcmlwdC1wbmct/bG9nby1kb3dubG9h/ZC05LnBuZw" />
+                <p id="sub-title"><em>I am a full-stack developer</em></p>
+            </div>
+
+        </div>
     </header>
 
     <main class="main-section">
-        <section id="about">
+        <section id="about" class="about">
             <header>
                 <h1>About</h1>
             </header>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias et quo, similique commodi a libero sit sunt
-        rerum, laborum voluptates. Fugit non ex magni dolor quaerat dolorem repudiandae quas.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias et quo, similique commodi a
+                libero sit
+                sunt
+                rerum, laborum voluptates. Fugit non ex magni dolor quaerat dolorem repudiandae quas.</p>
         </section>
-        <section id="projects">
-            <div class="project-tile">
 
+        <section id="projects" class="projects">
+            <header>
+                <h1>Projects</h1>
+            </header>
+            <div class="project-tile">
+                <p>My Projects</p>
+                <a href="https://www.myprojects.com">Project 1</a>
+                <a href="https://www.myprojects.com">Project 2</a>
+                <a href="https://www.myprojects.com">Project 3</a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam exercitationem modi quo nihil rem voluptate beatae, fugiat eaque id corporis laboriosam sit ea, facere tempora ex ipsum deserunt fuga.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias et quo, similique commodi a
+                libero sit
+                sunt
+                rerum, laborum voluptates. Fugit non ex magni dolor quaerat dolorem repudiandae quas.</p>
         </section>
-        <section id="techstack">
+
+
+
+
+        <section id="techstack" class="techstack">
             <header>
                 <h1>Tech Stack</h1>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio necessitatibus soluta a harum tempore, explicabo facere deserunt. Deserunt eveniet debitis eius natus corrupti quaerat veniam optio dolore itaque dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio necessitatibus soluta a harum tempore,
+                explicabo
+                facere deserunt. Deserunt eveniet debitis eius natus corrupti quaerat veniam optio dolore itaque
+                dignissimos?
+            </p>
         </section>
-        <section id="contact">
+        <section id="contact" class="contact">
+            <header>
+                <h1>Contact</h1>
+            </header>
             <a id="profile-link" target="_blank" href="https://www.github.com/afifone">
                 <i class="fab fa-github fa-1x"></i>
                 Github
             </a>
+            <a id="profile-link" target="_blank" href="https://www.github.com/afifone">
+                <i class="fab fa-github fa-1x"></i>
+                Linkdin
+            </a>
+            <a id="profile-link" target="_blank" href="https://www.github.com/afifone">
+                <i class="fab fa-email fa-1x"></i>
+                Email
+            </a>
+
+            <a id="profile-link" target="_blank" href="https://www.github.com/afifone">
+                <i class="fab fa-github fa-1x"></i>
+                Resume
+            </a>
         </section>
 
-<div class="footer">
-    <p>Personal Portfolio|Developed for Freecodecamp bootcamp riley@2023</p>
-</div>
+        <div class="footer">
+            <p>Developed for Freecodecamp bootcamp|riley@2023</p>
+        </div>
     </main>
-   
+
 </body>
+
 </html>

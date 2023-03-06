@@ -11,16 +11,23 @@
   --secondary-color: #6b78b0;
   --active-color: #6b78b0;
   --hover-color: rgb(156, 170, 223);
-  --line-color: #7a7979;
-  --border-color: #ccc;
+  --line-color: #dfdcdc;
+  --border-color: #e2e1e1;
   --white-color: #fff;
   --hero-bg: #566295;
+  --responsive-text: 3vw;
+  --responsive-title: 10vw;
+  --responsive-sub-title: 5vw;
+  --center-align: center;
+  --flex-display:flex;
+  --h2-responsive-text:5vw;
+  --rgb-black:rgba(34, 34, 34, 0.6);
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  padding-top: 60px;
+  padding-top: 65px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -44,7 +51,6 @@ body {
     height: auto;
     max-width: 500px;
     min-width: 300px;
-    padding-top: 10px;
   }
 }
 #welcome-section {
@@ -52,31 +58,30 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--hero-bg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: var(--flex-display);
+  justify-content: var(--center-align);
+  align-items: var(--center-align);
 }
 
 #welcome-section::before {
-  content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: url(images/forest.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-   filter: brightness(60%);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(10%);
 }
 
 #welcome-content {
-   position: relative;
-   font-family: "Monserrat", sans-serif;
-   color: white;
-   text-align: center;
-   margin: 0.625rem;
+  position: relative;
+  font-family: 'Monserrat', sans-serif;
+  text-align: var(--center-align);
+  margin: 0.625rem;
+  color: var(--white-color);
 }
 
 #welcome-section > * {
@@ -85,17 +90,15 @@ body {
 }
 
 #title {
-  font-size: 3rem;
-   font-weight: 600;
-   margin-bottom: 0;
-  color: var(--white-color);
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: var(--responsive-title);
 }
 
 #sub-title {
-   font-size: 2rem;
-   font-weight: 200;
-   margin-top: 1rem;
-   color: var(--white-color);
+  font-weight: 200;
+  margin-top: -7rem;
+  font-size: var(--responsive-sub-title);
 }
 
 #bg-image {
@@ -105,22 +108,21 @@ body {
 }
 
 p {
-  font-size: 1rem;
   letter-spacing: 0.1px;
-  text-align: center;
+  text-align: var(--center-align);
 }
 
 h1 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 6vw;
+  text-align: var(--center-align);
 }
-hr {
-  background-color: var(--line-color);
+#divider-line {
+  background-color: var(--white-color);
 }
 
 form {
   width: 100%;
-  text-align: center;
+  text-align: var(--center-align);
   display: inline-block;
 }
 input {
@@ -137,15 +139,29 @@ input {
   cursor: pointer;
 }
 
+#about-content {
+  font-size: var(--responsive-text);
+}
+#project-content {
+  /* font-size: 3vw; */
+  font-size: var(--responsive-text);
+}
+#stack-content {
+  font-size: var(--responsive-text);
+}
+#contact {
+  font-size: var(--responsive-text);
+}
+
 #navbar {
   position: fixed;
   transition: background 0.4s ease-in-out;
   width: 100%;
   overflow: hidden;
   background-color: var(--primary-color);
-  display: flex;
+  display: var(--flex-display);
   justify-content: space-between;
-  align-items: center;
+  align-items: var(--center-align);
   top: 0;
   right: 0;
   left: 0;
@@ -156,7 +172,7 @@ input {
 }
 #navbar ul {
   list-style: none;
-  display: flex;
+  display: var(--flex-display);
 }
 /* Style the navigation menu */
 
@@ -166,13 +182,13 @@ input {
   padding: 0;
   overflow: hidden;
   background-color: var(--primary-color);
-  display: flex;
+  display: var(--flex-display);
 }
 
 .nav-link {
   display: block;
   color: var(--white-color);
-  text-align: center;
+  text-align: var(--center-align);
   float: left;
   padding: 14px 16px;
   text-decoration: none;
@@ -187,9 +203,54 @@ input {
   background-color: var(--active-color);
 }
 
+/* Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  display: var(--flex-display);
+  flex-direction: column;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--rgb-black);
+  color: #fff;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .card-text {
+  opacity: 1;
+}
+
+
+
 /* Style the footer */
 .footer {
   background-color: #f1f1f1;
   padding: 10px;
-  text-align: center;
+  text-align: var(--center-align);
 }

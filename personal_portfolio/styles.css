@@ -19,9 +19,16 @@
   --responsive-title: 10vw;
   --responsive-sub-title: 5vw;
   --center-align: center;
-  --flex-display:flex;
-  --h2-responsive-text:5vw;
-  --rgb-black:rgba(34, 34, 34, 0.6);
+  --flex-display: flex;
+  --h2-responsive-text: 5vw;
+  --rgb-black: rgba(34, 34, 34, 0.6);
+  --rgb-border: rgba(34, 34, 34, 0.6);
+  --contact-section-bg: rgb(222, 222, 222);
+  --footer-section-bg: rgb(107, 120, 176);
+  --facebook-color: #4267b2;
+  --twitter-color: #1da1f2;
+  --linkdin-color: #0077b5;
+  --hand-cursor: pointer;
 }
 
 body {
@@ -106,6 +113,22 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#contact {
+  background-color: var(--contact-section-bg);
+  font-size: var(--responsive-text);
+  opacity: 1;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+}
+.learn-more{
+  text-decoration: none;
+  color:var(--white-color);
+ letter-spacing: 0.1px;
+  text-align: var(--center-align);
+ 
+}
 
 p {
   letter-spacing: 0.1px;
@@ -147,9 +170,6 @@ input {
   font-size: var(--responsive-text);
 }
 #stack-content {
-  font-size: var(--responsive-text);
-}
-#contact {
   font-size: var(--responsive-text);
 }
 
@@ -217,7 +237,8 @@ input {
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px var(--rgb-border);
+  cursor: var(--hand-cursor);
 }
 
 .card img {
@@ -245,12 +266,31 @@ input {
 .card:hover .card-text {
   opacity: 1;
 }
-
-
-
 /* Style the footer */
 .footer {
-  background-color: #f1f1f1;
+  background-color: var(--footer-section-bg);
   padding: 10px;
   text-align: var(--center-align);
+  color: var(--white-color);
+  padding: 20px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-row i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: var(--hand-cursor);
+}
+.git {
+  color: var(--facebook-color);
+}
+.linkd {
+  color: var(--twitter-color);
+}
+.twit {
+  color: var(--linkdin-color);
 }

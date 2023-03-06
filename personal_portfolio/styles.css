@@ -28,6 +28,7 @@
   --facebook-color: #4267b2;
   --twitter-color: #1da1f2;
   --linkdin-color: #0077b5;
+  --hand-cursor: pointer;
 }
 
 body {
@@ -120,6 +121,13 @@ body {
 .contact-icons {
   display: flex;
   justify-content: center;
+}
+.learn-more{
+  text-decoration: none;
+  color:var(--white-color);
+ letter-spacing: 0.1px;
+  text-align: var(--center-align);
+ 
 }
 
 p {
@@ -230,6 +238,7 @@ input {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px var(--rgb-border);
+  cursor: var(--hand-cursor);
 }
 
 .card img {
@@ -274,6 +283,7 @@ input {
 .icon-row i {
   font-size: 24px;
   margin: 0 10px;
+  cursor: var(--hand-cursor);
 }
 .git {
   color: var(--facebook-color);

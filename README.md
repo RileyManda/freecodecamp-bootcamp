@@ -1,5 +1,6 @@
 # [Freecodecamp BootCamp Projects]
 ### (https://www.freecodecamp.org)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 ## 1: ***Survey Form*** 
 ## 2: ***balance sheet*** 

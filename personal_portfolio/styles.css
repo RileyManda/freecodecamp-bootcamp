@@ -17,7 +17,7 @@
   --hero-bg: #566295;
   --responsive-text: 3vw;
   --responsive-title: 10vw;
-  --responsive-sub-title: 5vw;
+  --responsive-sub-title: 3vw;
   --center-align: center;
   --flex-display: flex;
   --h2-responsive-text: 5vw;
@@ -34,7 +34,10 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  padding-top: 65px;
+  padding-top: 60px;
+}
+#main-section {
+  display: inline-block;
 }
 
 @media only screen and (min-width: 480px) {
@@ -56,8 +59,6 @@ body {
   body {
     width: 100%;
     height: auto;
-    max-width: 500px;
-    min-width: 300px;
   }
 }
 #welcome-section {
@@ -68,6 +69,7 @@ body {
   display: var(--flex-display);
   justify-content: var(--center-align);
   align-items: var(--center-align);
+  margin: 0 auto;
 }
 
 #welcome-section::before {
@@ -89,6 +91,9 @@ body {
   text-align: var(--center-align);
   margin: 0.625rem;
   color: var(--white-color);
+  max-width: 1200px;
+  height: 500px;
+  text-align: center;
 }
 
 #welcome-section > * {
@@ -97,37 +102,50 @@ body {
 }
 
 #title {
-  font-weight: 600;
-  margin-bottom: 0;
   font-size: var(--responsive-title);
+  margin: auto;
+  position: absolute;
+  top: 13vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
-
 #sub-title {
-  font-weight: 200;
-  margin-top: -7rem;
+  margin: auto;
+  position: absolute;
+  top: 27vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
   font-size: var(--responsive-sub-title);
+  color: var(--white-color);
 }
 
 #bg-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: var(--flex-display);
+  opacity: 0.5;
 }
+
 #contact {
   background-color: var(--contact-section-bg);
   font-size: var(--responsive-text);
   opacity: 1;
 }
+
 .contact-icons {
   display: flex;
   justify-content: center;
 }
-.learn-more{
+.learn-more {
   text-decoration: none;
-  color:var(--white-color);
- letter-spacing: 0.1px;
+  color: var(--white-color);
+  letter-spacing: 0.1px;
   text-align: var(--center-align);
- 
 }
 
 p {
@@ -162,9 +180,6 @@ input {
   cursor: pointer;
 }
 
-#about-content {
-  font-size: var(--responsive-text);
-}
 #project-content {
   /* font-size: 3vw; */
   font-size: var(--responsive-text);
@@ -173,6 +188,9 @@ input {
   font-size: var(--responsive-text);
 }
 
+#about-content {
+  font-size: var(--responsive-text);
+}
 #navbar {
   position: fixed;
   transition: background 0.4s ease-in-out;
@@ -268,6 +286,8 @@ input {
 }
 /* Style the footer */
 .footer {
+  position: absolute;
+  width: 100%;
   background-color: var(--footer-section-bg);
   padding: 10px;
   text-align: var(--center-align);
